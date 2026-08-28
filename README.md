@@ -1,50 +1,32 @@
-# The Absence Signal — Flagship Intelligence Workbench V3
+# SOCIAL LOAD — AI Infrastructure Stability Monitor
 
 **Principal Investigator:** Mohd Khairul Ridhuan bin Mohd Fadzil
 
-## What this project answers
-1. Who is the company?
-2. What does it do?
-3. Which industries does it connect to?
-4. Does it have an overseas / multi-jurisdiction network?
-5. Does observable reality support its claimed profile?
-6. What has changed recently?
-7. Does the network make sense for the business model?
-8. What does not fit?
-9. So what?
-10. What should an investigator verify next?
+## Core question
+Can rapid AI-data-centre expansion exceed a location's infrastructure capacity, community tolerance and population-level pressure resilience?
 
-## Core analytical layers
-- Company Intelligence Snapshot
-- Multi-source Entity Resolution
-- Industry Ecosystem
-- Overseas Network
-- Expected Footprint Divergence
-- Network Coherence
-- Corporate Behavioural Drift
-- Evidence Confidence
-- Evidence Ledger
-- Falsification Requirement
-- Executive Analyst Brief
+## What the dashboard does
+- 20-second executive brief
+- Infrastructure Pressure Index
+- Community Friction Index
+- Cognitive Pressure Proxy
+- Social Load Index
+- Peer-hub percentile
+- Live World Bank indicators
+- Best-effort live GDELT media attention
+- Global IEA benchmarks
+- Scenario stress-testing (+25%, +50%, mitigation)
+- Evidence ledger
+- Executive analyst brief
 
-## Live / optional data
-- GLEIF: live, no key required
-- OFAC SDN names: current public feed
-- Companies House: optional API key
-- OpenCorporates: optional API token
+## Important methodological note
+The dashboard is an early-warning and scenario tool. It does not predict protest, violence, psychiatric outcomes, or individual behaviour. The cognitive layer is a population-level stress proxy.
 
-## Run
+## Run locally
 ```bash
 pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
-## Optional secrets
-Create `.streamlit/secrets.toml` locally or configure Streamlit Cloud Secrets:
-```toml
-COMPANIES_HOUSE_API_KEY = "your_key"
-OPENCORPORATES_API_TOKEN = "your_token"
-```
-
-## Important
-This is an intelligence triage framework, not a fraud detector. Public-source absence, name similarity, or network proximity must never be treated as proof of wrongdoing.
+## Deploy
+Upload `streamlit_app.py`, `requirements.txt`, and `README.md` to GitHub, then deploy `streamlit_app.py` using Streamlit Community Cloud.
