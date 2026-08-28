@@ -1,16 +1,20 @@
-# The Absence Signal — Counterparty Reality Intelligence
+# The Absence Signal — Intelligence Workbench 
 
 Principal Investigator: Mohd Khairul Ridhuan bin Mohd Fadzil
 
-A minimalist public-source intelligence dashboard that compares claimed organisational reality against the footprint that should reasonably be observable.
-
-## Core logic
-1. Validate entity identity
-2. Capture claimed profile
-3. Record observable evidence
-4. Compute Expected Footprint Divergence
-5. Surface top collection priorities
-6. Produce an analyst judgement with falsification discipline
+## What V2 adds
+- Multi-source entity resolution
+- GLEIF live entity layer
+- OFAC SDN name-similarity cue
+- Optional Companies House connector
+- Optional OpenCorporates connector
+- Expected Footprint Divergence scoring
+- Evidence confidence
+- Evidence ledger / provenance
+- Chronology
+- Network collection questions
+- Analyst brief
+- Falsification discipline
 
 ## Run
 ```bash
@@ -18,8 +22,14 @@ pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
-## Deploy on Streamlit Community Cloud
-Upload the files to GitHub, then select `streamlit_app.py` as the app entry point.
+## Optional API keys
+Create `.streamlit/secrets.toml` locally or use Streamlit Cloud Secrets:
+```toml
+COMPANIES_HOUSE_API_KEY = "..."
+OPENCORPORATES_API_TOKEN = "..."
+```
 
-## Important
-This dashboard is a triage tool. It does not establish fraud, sanctions evasion, criminality, or illegality.
+The app runs without these keys; they simply improve entity coverage.
+
+## Important analytic caveat
+The framework is a triage and collection-prioritisation system. It does not establish wrongdoing.
